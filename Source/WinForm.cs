@@ -7,7 +7,12 @@ public static string DisplayTitle()
   return $" V{fvi.FileMajorPart}.{fvi.FileMinorPart}.{fvi.FileBuildPart}.{fvi.FilePrivatePart}"; // doesn't build in appveyor
 }
 
-public static string GetArchitecture()
+public static string GetServerArchitecture()
 {
-  Return Environment.Is64BitOperatingSystem ? "X64" : "X86";
+  return Environment.Is64BitOperatingSystem ? "X64" : "X86";
+}
+
+public static string GetEnvironment64BitProcess()
+{
+  return Environment.Is64BitProcess ? "X64" : "X86";
 }
