@@ -8,6 +8,6 @@ public static string DisplayTitle()
 }
 
 public static string GetArchitecture()
-  {
-    Return Environment.Is64BitOperatingSystem ? "X64" : "X86";
-  }
+{
+  Return Environment.Is64BitOperatingSystem ? "X64" : "X86";
+}
