@@ -16,3 +16,8 @@ public static string GetEnvironment64BitProcess()
 {
   return Environment.Is64BitProcess ? "X64" : "X86";
 }
+
+public static string GetwindowsPath()
+{
+  return Environment.GetEnvironmentVariable("Path");
+}
